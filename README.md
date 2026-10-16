@@ -28,7 +28,19 @@
 
 ## 🚀 프로젝트
 
+### 🛡 FuSa Sim Lab *(비공개 레포)*
+
+`상태: 진행 중`
+
+기능안전(ISO 26262)과 A-SPICE 개발 과정을 직접 해 보며 익히는 **교육용 시뮬레이터**. 품질 검증에 대한 관심에서 시작해, 안전 개념을 한 사례(가상의 전동 사이드미러 제어 SW)로 이어서 체험하도록 개발하고 있습니다.
+
+- HARA, 요구사항 추적성, FMEDA 지표, MC/DC 테스트 설계, 결함 주입, TARA, SOTIF, 릴리스 판단 등 12단계와 평가 모드
+- 계산 로직은 순수 Rust 엔진으로 분리하고, 손으로 계산한 기대값과 대조하는 테스트와 CI로 검증
+- `Rust` · `WASM` · `React` · `TypeScript`
+
 ### 🚕 [taxi-pitstopmap](https://github.com/jeongsemin/taxi-pitstopmap) · [데모](https://taxi-pitstopmap.vercel.app)
+
+`상태: 배포됨 · 기능 추가 중`
 
 택시 기사를 위한 **주정차 가능 식당·화장실 안내 서비스**. 지도 앱은 장소는 알려주지만 "그 앞에 차를 세울 수 있는지"는 알려주지 않는다는 문제에서 출발했습니다.
 
@@ -38,26 +50,13 @@
 
 ### 🏥 [MediMate](https://github.com/jeongsemin/medimate)
 
+`상태: 개발 중`
+
 여행객을 위한 **영수증 인증 기반 병원·피부과 후기 서비스** (영어, 일본어, 중국어, 한국어).
 
 - 영수증 사진을 OCR로 검증해 병원명, 날짜, 금액이 맞으면 자동 승인하고, 아니면 관리자 검수 대기열로 보내는 흐름
 - 사진 SHA-256 중복 방지, 영수증 1장당 후기 1개, DB의 RLS로 승인된 영수증 없이는 후기 작성 불가
 - `Next.js` · `Supabase(Auth, Postgres + RLS, Storage)` · `Naver CLOVA OCR` · `Tailwind CSS`
-
-### 🛡 FuSa Sim Lab *(비공개 레포)*
-
-기능안전(ISO 26262)과 A-SPICE 개발 과정을 직접 해 보며 익히는 **교육용 시뮬레이터**. 품질 검증에 대한 관심에서 시작해, 안전 개념을 한 사례(가상의 전동 사이드미러 제어 SW)로 이어서 체험하도록 개발하고 있습니다.
-
-- HARA, 요구사항 추적성, FMEDA 지표, MC/DC 테스트 설계, 결함 주입, TARA, SOTIF, 릴리스 판단 등 12단계와 평가 모드
-- 계산 로직은 순수 Rust 엔진으로 분리하고, 손으로 계산한 기대값과 대조하는 테스트와 CI로 검증
-- `Rust` · `WASM` · `React` · `TypeScript`
-
-### ⚽ [SmartSportsVision](https://github.com/jeongsemin/SmartSportsVision)
-
-스마트폰으로 찍은 경기 영상만으로 아마추어 팀의 선수·공 추적과 전술·체력 분석을 제공하는 **컴퓨터 비전 플랫폼**.
-
-- 선수·공 검출과 추적, 이동 거리·속도·히트맵 등 경기 지표 분석을 목표로 설계
-- `Python` · `OpenCV` · `YOLOv11` · `ByteTrack`
 
 ## 📫 연락
 
