@@ -1,0 +1,64 @@
+# 안녕하세요, 정세민입니다 👋
+
+자동차 전장 **임베디드 SW 개발자**입니다. 현대 제네시스 차량의 OTA(Over-the-Air) 업데이트에서 ECU 제어기 업데이트 유지보수와 Download Manager를 맡았고, HMC CCU 2.0 품질 검증과 AI를 활용한 C# WPF 모듈 테스트 자동화 프로그램 개발까지 경험했습니다. 요즘은 품질 검증에 관심을 갖고, 기능안전(ISO 26262)과 A-SPICE 개발 과정을 체험하는 교육용 시뮬레이터 FuSa Sim Lab을 개발하고 있습니다. 웹 서비스도 만들며 AI와 함께 개발하는 방식을 실무와 사이드 프로젝트에 적용하고 있습니다.
+
+## 💼 경력
+
+**오큐브 개발 2팀 · 선임연구원** (2023.06 ~ 재직 중)
+
+- AMP, HUD ECU 제어기 업데이트 기능 유지보수 (2024.01 ~ 2024.12)
+- 현대 제네시스 차량 SW 업데이트(OTA) 신규 기능 개발 및 유지보수 (2025.01 ~ 2025.12)
+- OTA 업데이트 Download Manager 업무 진행 (2025.01 ~ 2025.06)
+- HMC CCU 2.0 신규 사양과 품질 검증 (2025.09 ~ 2026.02)
+- AI를 활용한 C# WPF 모듈 테스트 자동화 프로그램 개발 (2026.03 ~ 2026.06)
+
+## 🎓 학력 · 수상
+
+- 세종대학교 소프트웨어학과 졸업 (2017.02 ~ 2023.02)
+- 2021 창의적 종합설계 교내 경진대회 **최우수상** (경희대학교 공학교육혁신센터)
+- 제로베이스 프론트엔드 스쿨 수료 (2023.01 ~ 2023.06)
+
+## 🛠 기술 스택
+
+| 분야 | 기술 |
+| --- | --- |
+| 임베디드 / 차량 | C, C++, Qt, Linux, CAN, UDS, Ethernet |
+| 웹 | TypeScript, React, Next.js, Tailwind CSS, Supabase |
+| 그 외 | Rust(WASM), Python, C#(WPF), Git, GitHub |
+
+## 🚀 프로젝트
+
+### 🚕 [taxi-pitstopmap](https://github.com/jeongsemin/taxi-pitstopmap) · [데모](https://taxi-pitstopmap.vercel.app)
+
+택시 기사를 위한 **주정차 가능 식당·화장실 안내 서비스**. 지도 앱은 장소는 알려주지만 "그 앞에 차를 세울 수 있는지"는 알려주지 않는다는 문제에서 출발했습니다.
+
+- 공식 데이터, 추정 데이터, 사용자 제보를 조합한 **주정차 점수**(가능 / 불확실 / 어려움) 설계
+- 현재 위치 기반 검색, 반경 조절, 카카오맵·네이버 지도·T맵 연결, 익명 로그인 기반 원터치 제보
+- `Next.js` · `TypeScript` · `Supabase` · `Kakao Map`
+
+### 🏥 [MediMate](https://github.com/jeongsemin/medimate)
+
+여행객을 위한 **영수증 인증 기반 병원·피부과 후기 서비스** (영어, 일본어, 중국어, 한국어).
+
+- 영수증 사진을 OCR로 검증해 병원명, 날짜, 금액이 맞으면 자동 승인하고, 아니면 관리자 검수 대기열로 보내는 흐름
+- 사진 SHA-256 중복 방지, 영수증 1장당 후기 1개, DB의 RLS로 승인된 영수증 없이는 후기 작성 불가
+- `Next.js` · `Supabase(Auth, Postgres + RLS, Storage)` · `Naver CLOVA OCR` · `Tailwind CSS`
+
+### 🛡 FuSa Sim Lab *(비공개 레포)*
+
+기능안전(ISO 26262)과 A-SPICE 개발 과정을 직접 해 보며 익히는 **교육용 시뮬레이터**. 품질 검증에 대한 관심에서 시작해, 안전 개념을 한 사례(가상의 전동 사이드미러 제어 SW)로 이어서 체험하도록 개발하고 있습니다.
+
+- HARA, 요구사항 추적성, FMEDA 지표, MC/DC 테스트 설계, 결함 주입, TARA, SOTIF, 릴리스 판단 등 12단계와 평가 모드
+- 계산 로직은 순수 Rust 엔진으로 분리하고, 손으로 계산한 기대값과 대조하는 테스트와 CI로 검증
+- `Rust` · `WASM` · `React` · `TypeScript`
+
+### ⚽ [SmartSportsVision](https://github.com/jeongsemin/SmartSportsVision)
+
+스마트폰으로 찍은 경기 영상만으로 아마추어 팀의 선수·공 추적과 전술·체력 분석을 제공하는 **컴퓨터 비전 플랫폼**.
+
+- 선수·공 검출과 추적, 이동 거리·속도·히트맵 등 경기 지표 분석을 목표로 설계
+- `Python` · `OpenCV` · `YOLOv11` · `ByteTrack`
+
+## 📫 연락
+
+- GitHub: [@jeongsemin](https://github.com/jeongsemin)
