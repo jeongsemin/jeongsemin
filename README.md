@@ -1,6 +1,6 @@
 # 안녕하세요, 정세민입니다 👋
 
-자동차 전장 **임베디드 SW 개발자**입니다. 현대 제네시스 차량의 OTA(Over-the-Air) 업데이트에서 ECU 제어기 업데이트 유지보수와 Download Manager를 맡았고, HMC CCU 2.0 품질 검증과 AI를 활용한 C# WPF 모듈 테스트 자동화 프로그램 개발까지 경험했습니다. 요즘은 품질 검증에 관심을 갖고, 기능안전(ISO 26262)과 A-SPICE 개발 과정을 체험하는 교육용 시뮬레이터 FuSa Sim Lab을 개발하고 있습니다. 웹 서비스도 만들며 AI와 함께 개발하는 방식을 실무와 사이드 프로젝트에 적용하고 있습니다.
+자동차 전장 **임베디드 SW 개발자**입니다. 현대 제네시스 차량의 OTA(Over-the-Air) 업데이트에서 ECU 제어기 업데이트 유지보수와 Download Manager를 맡았고, HMC CCU 2.0 품질 검증과 AI를 활용한 C# WPF 모듈 테스트 자동화 프로그램 개발까지 경험했습니다. 요즘은 품질 검증에 관심이 많고, 웹 서비스도 만들며 AI와 함께 개발하는 방식을 실무와 사이드 프로젝트에 적용하고 있습니다.
 
 ## 💼 경력
 
@@ -24,19 +24,9 @@
 | --- | --- |
 | 임베디드 / 차량 | C, C++, Qt, Linux, CAN, UDS, Ethernet |
 | 웹 | TypeScript, React, Next.js, Tailwind CSS, Supabase |
-| 그 외 | Rust(WASM), Python, C#(WPF), Git, GitHub |
+| 그 외 | Python, C#(WPF), Git, GitHub |
 
 ## 🚀 프로젝트
-
-### 🛡 FuSa Sim Lab *(비공개 레포)*
-
-`상태: 진행 중`
-
-기능안전(ISO 26262)과 A-SPICE 개발 과정을 직접 해 보며 익히는 **교육용 시뮬레이터**. 품질 검증에 대한 관심에서 시작해, 안전 개념을 한 사례(가상의 전동 사이드미러 제어 SW)로 이어서 체험하도록 개발하고 있습니다.
-
-- HARA, 요구사항 추적성, FMEDA 지표, MC/DC 테스트 설계, 결함 주입, TARA, SOTIF, 릴리스 판단 등 12단계와 평가 모드
-- 계산 로직은 순수 Rust 엔진으로 분리하고, 손으로 계산한 기대값과 대조하는 테스트와 CI로 검증
-- `Rust` · `WASM` · `React` · `TypeScript`
 
 ### 🚕 [taxi-pitstopmap](https://github.com/jeongsemin/taxi-pitstopmap) · [데모](https://taxi-pitstopmap.vercel.app)
 
@@ -48,14 +38,16 @@
 - 현재 위치 기반 검색, 반경 조절, 카카오맵·네이버 지도·T맵 연결, 익명 로그인 기반 원터치 제보
 - `Next.js` · `TypeScript` · `Supabase` · `Kakao Map`
 
-### 🏥 [MediMate](https://github.com/jeongsemin/medimate)
+### 🏥 [KONCI](https://github.com/jeongsemin/konci)
 
-`상태: 개발 중`
+`상태: 배포 준비 중 (konci.kr)`
 
-여행객을 위한 **영수증 인증 기반 병원·피부과 후기 서비스** (영어, 일본어, 중국어, 한국어).
+한국을 찾는 외국인을 위한 **영수증 인증 기반 병원·피부과 후기 서비스** (영어, 일본어, 중국어, 한국어). 이전 이름은 MediMate입니다.
 
 - 영수증 사진을 OCR로 검증해 병원명, 날짜, 금액이 맞으면 자동 승인하고, 아니면 관리자 검수 대기열로 보내는 흐름
 - 사진 SHA-256 중복 방지, 영수증 1장당 후기 1개, DB의 RLS로 승인된 영수증 없이는 후기 작성 불가
+- 건강보험심사평가원 공공데이터로 병원 목록을 채우고, 폐업·이전한 병원은 후기 작성을 막음
+- 구글·이메일 링크 로그인, 만 14세 확인, 후기 없는 영수증 사진 30일 뒤 삭제, 보안 헤더
 - `Next.js` · `Supabase(Auth, Postgres + RLS, Storage)` · `Naver CLOVA OCR` · `Tailwind CSS`
 
 ## 📫 연락
